@@ -1,5 +1,6 @@
 const { createUsersTable, insertUser, fetchAllUsers, updateUserInfo, deleteInfo } = require("./concepts/basic-queries");
 const { getUsersWhere, getSortedUsers, getPaginatedUsers } = require("./concepts/filtering-sorting");
+const { createPostsTable, insertNewPost } = require("./concepts/relationships");
 
 //test basic queries
 async function testBasicQueries() {
@@ -47,10 +48,24 @@ async function testFilterAndSortQueries() {
     }
 }
 
+// test relationshop queries
+async function testRelationshipQueries() {
+    try {
+        await createPostsTable();
+
+        await insertNewPost("First post", "this is my first post", 3);
+        await insertNewPost("Second post", "this is my second post", 3);
+        await insertNewPost("Third post", "this is my third post", 4);
+    } catch (e) {
+        console.error("Error", error);
+    }
+}
+
+
 async function testAllQueries() {
     await testBasicQueries();
     await testFilterAndSortQueries();
+    await testRelationshipQueries();
 }
 
 testAllQueries();
- 
