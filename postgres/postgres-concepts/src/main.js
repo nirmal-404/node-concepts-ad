@@ -1,6 +1,8 @@
 const { createUsersTable, insertUser, fetchAllUsers, updateUserInfo, deleteInfo } = require("./concepts/basic-queries");
 const { getUsersWhere, getSortedUsers, getPaginatedUsers } = require("./concepts/filtering-sorting");
 const { createPostsTable, insertNewPost } = require("./concepts/relationships");
+const { getUsersWithPosts, getAllUsersAndTheirPosts } = require("./concepts/joins");
+
 
 //test basic queries
 async function testBasicQueries() {
@@ -61,11 +63,24 @@ async function testRelationshipQueries() {
     }
 }
 
+// test join queries
+async function testJoinQueries() {
+    try {
+        const usersWithPosts = await getUsersWithPosts();
+        console.log(usersWithPosts);
+
+        const allUsersWithAllPosts = await getAllUsersAndTheirPosts();
+        console.log(allUsersWithAllPosts);
+    } catch (e) {
+        console.error(e);
+    }
+}
 
 async function testAllQueries() {
     await testBasicQueries();
     await testFilterAndSortQueries();
     await testRelationshipQueries();
+    await testJoinQueries();
 }
 
 testAllQueries();
