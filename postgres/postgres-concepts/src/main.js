@@ -1,5 +1,5 @@
 const { createUsersTable, insertUser, fetchAllUsers, updateUserInfo, deleteInfo } = require("./concepts/basic-queries");
-
+const { getUsersWhere, getSortedUsers, getPaginatedUsers } = require("./concepts/filtering-sorting");
 
 //test basic queries
 async function testBasicQueries() {
@@ -30,8 +30,27 @@ async function testBasicQueries() {
     }
 }
 
+// test filter and sort queries
+async function testFilterAndSortQueries() {
+    try {
+        //get users with a username whose username starting with z
+        const zFilteredUsers = await getUsersWhere("username LIKE ''");
+        console.log(zFilteredUsers);
+
+        const sortedUsers = await getSortedUsers("created_at", "DESC");
+        console.log(sortedUsers);
+
+        const paginatedUsers = await getPaginatedUsers(1, 0);
+        console.log("paginatedUsers", paginatedUsers);
+    } catch (e) {
+        console.error("Error", error);
+    }
+}
+
 async function testAllQueries() {
     await testBasicQueries();
+    await testFilterAndSortQueries();
 }
 
 testAllQueries();
+ 
