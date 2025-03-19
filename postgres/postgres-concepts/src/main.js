@@ -2,7 +2,10 @@ const { createUsersTable, insertUser, fetchAllUsers, updateUserInfo, deleteInfo 
 const { getUsersWhere, getSortedUsers, getPaginatedUsers } = require("./concepts/filtering-sorting");
 const { createPostsTable, insertNewPost } = require("./concepts/relationships");
 const { getUsersWithPosts, getAllUsersAndTheirPosts } = require("./concepts/joins");
-
+const {
+    countPostsByUser,
+    averagePostsPerUser,
+} = require("./concepts/aggregation");
 
 //test basic queries
 async function testBasicQueries() {
@@ -76,11 +79,26 @@ async function testJoinQueries() {
     }
 }
 
+// test aggregation queries
+async function testAggregateQueries() {
+    try {
+        const postCount = await countPostsByUser();
+        console.log("countPostsByUser = " , postCount);
+
+        const averagePostsPerUserInfo = await averagePostsPerUser();
+        console.log("averagePostsPerUserInfo = ", averagePostsPerUserInfo);
+    } catch (e) {
+        console.error(e);
+    }
+}
+
+// Test all queries
 async function testAllQueries() {
-    await testBasicQueries();
-    await testFilterAndSortQueries();
-    await testRelationshipQueries();
-    await testJoinQueries();
+    // await testBasicQueries();
+    // await testFilterAndSortQueries();
+    // await testRelationshipQueries();
+    // await testJoinQueries();
+    await testAggregateQueries();
 }
 
 testAllQueries();
