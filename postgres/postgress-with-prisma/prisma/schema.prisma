@@ -19,4 +19,12 @@ model Book {
   id           Int      @id @default(autoincrement())
   title        String
   publisedDate DateTime
+  authorId     Int
+  author       Author   @relation(fields: [authorId], references: [id], onDelete: Cascade)
+}
+
+model Author {
+  id    Int    @id @default(autoincrement())
+  name  String
+  books Book[]
 }
