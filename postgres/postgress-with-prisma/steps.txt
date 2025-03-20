@@ -15,3 +15,8 @@ docker-compose down
 npm i prom-client
 
 create prometheus.yml
+
+go to localhost:9091
+go to localhost:9091/metrics
+go to localhost:9091/target 
+    and monotor
