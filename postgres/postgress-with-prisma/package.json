@@ -1,11 +1,11 @@
 {
   "name": "postgress-with-prisma",
   "version": "1.0.0",
-  "main": "src/sever.js",
+  "main": "src/server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node src/sever.js",
-    "dev": "nodemon src/sever.js"
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js"
   },
   "keywords": [],
   "author": "",

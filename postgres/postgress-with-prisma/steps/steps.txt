@@ -7,3 +7,5 @@ npx prisma init
 npx prisma migrate dev --name init
 
 npm i nodemon
+
+npx prisma generate
