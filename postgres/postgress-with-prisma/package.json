@@ -4,8 +4,8 @@
   "main": "src/server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node src/server.js",
-    "dev": "nodemon src/server.js"
+    "start": "npx prisma generate && nodemon src/server.js",
+    "dev": "npx prisma generate && nodemon src/server.js"
   },
   "keywords": [],
   "author": "",
