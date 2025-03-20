@@ -16,6 +16,7 @@
     "dotenv": "^16.4.7",
     "express": "^4.21.2",
     "nodemon": "^3.1.9",
-    "prisma": "^6.5.0"
+    "prisma": "^6.5.0",
+    "prom-client": "^15.1.3"
   }
 }

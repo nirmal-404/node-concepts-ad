@@ -10,3 +10,8 @@ docker logs express_api
 
 docker-compose down
 
+------------setting up prometheus and graphana 
+
+npm i prom-client
+
+create prometheus.yml
