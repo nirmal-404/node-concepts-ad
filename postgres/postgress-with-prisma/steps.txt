@@ -10,7 +10,7 @@ docker logs express_api
 
 docker-compose down
 
-------------setting up prometheus and graphana 
+------------setting up prometheus ------------- 
 
 npm i prom-client
 
@@ -20,3 +20,6 @@ go to localhost:9091
 go to localhost:9091/metrics
 go to localhost:9091/target 
     and monotor
+
+------------ setting up graphna ---------------
+go to localhost:3005
