@@ -1,0 +1,22 @@
+{
+  "name": "postgress-with-prisma",
+  "version": "1.0.0",
+  "main": "src/server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npx prisma generate && nodemon src/server.js",
+    "dev": "npx prisma generate && nodemon src/server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@prisma/client": "^6.5.0",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "nodemon": "^3.1.9",
+    "prisma": "^6.5.0",
+    "prom-client": "^15.1.3"
+  }
+}

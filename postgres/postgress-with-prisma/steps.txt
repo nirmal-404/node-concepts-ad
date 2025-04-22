@@ -1,0 +1,25 @@
+docker-compose up -d --build
+
+docker exec -it express_api npx prisma generate
+
+docker exec -it express_api npx prisma migrate dev --name init
+
+docker exec -it express_api npx prisma db pull  
+
+docker logs express_api
+
+docker-compose down
+
+------------setting up prometheus ------------- 
+
+npm i prom-client
+
+create prometheus.yml
+
+go to localhost:9091
+go to localhost:9091/metrics
+go to localhost:9091/target 
+    and monotor
+
+------------ setting up graphna ---------------
+go to localhost:3005
