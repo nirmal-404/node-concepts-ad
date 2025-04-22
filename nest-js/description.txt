@@ -1,0 +1,12 @@
+
+-------------------------getting started -------------------------------------
+
+1.  npm i -g @nestjs/cli
+2.  nest new concepts
+
+
+genarate blog module
+
+\nest-js\concepts>    nest generate module blog
+
+\nest-js\concepts> nest generate controller blog
