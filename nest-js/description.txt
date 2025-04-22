@@ -10,3 +10,22 @@ genarate blog module
 \nest-js\concepts>    nest generate module blog
 
 \nest-js\concepts> nest generate controller blog
+
+---------------------------------travel tracker ---------------------------
+
+1.  travel-tracker> npm i -g @nestjs/cli
+2.  travel-tracker> nest new concepts
+
+create nenone project (database)
+
+4. travel-tracker> npm i prisma @prisma/client
+5. travel-tracker> npx prisma init
+
+6. travel-tracker> npx prisma generate
+7. travel-tracker> npx prisma migrate dev --name init
+
+8. travel-tracker> npm i --save @nestjs/config
+9. travel-tracker> nest generate module prisma
+10. travel-tracker> nest generate service prisma
+
+
