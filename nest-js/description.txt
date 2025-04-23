@@ -37,3 +37,29 @@ implement prisma.service.ts
 implement prisma.module.ts
 
 -------------------authentication and jwt --------------
+travel-tracker> nest generate module auth
+travel-tracker> nest generate controller auth
+travel-tracker> nest generate service auth
+travel-tracker> npm i class-validator
+travel-tracker> npm i bcrypt
+travel-tracker> npm i --save-dev @types/bcrypt
+travel-tracker>  npm i --save class-validator class-transformer
+travel-tracker> npm install --save @nestjs/jwt
+travel-tracker> npm install --save @nestjs/jwt passport-jwt
+travel-tracker> npm install --save-dev @types/passport-jwt
+travel-tracker> npm install --save @nestjs/passport
+
+
+travel-tracker> nest generate module destinations
+travel-tracker> nest generate controller destinations
+travel-tracker> nest generate service destinations
+travel-tracker> npm install @nestjs/mapped-types  
+travel-tracker> 
+travel-tracker> 
+travel-tracker> 
+travel-tracker> 
+travel-tracker> 
+travel-tracker> 
+travel-tracker> 
+travel-tracker> 
+travel-tracker> 
