@@ -10,3 +10,30 @@ genarate blog module
 \nest-js\concepts>    nest generate module blog
 
 \nest-js\concepts> nest generate controller blog
+
+
+================Travel tracker ======================
+Crete neon db and add the url to .env
+
+travel-tracker> npm i prisma @prisma/client
+
+travel-tracker> npx prisma init
+
+crete schemas in schema.prisma
+
+travel-tracker> npx prisma generate
+
+travel-tracker> npx prisma migrate dev --name init
+
+travel-tracker> npm i --save @nestjs/config
+
+implement the app.modult.ts
+
+
+travel-tracker> nest generate module prisma
+travel-tracker> nest generate service prisma
+
+implement prisma.service.ts
+implement prisma.module.ts
+
+-------------------authentication and jwt --------------
