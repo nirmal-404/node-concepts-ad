@@ -1,0 +1,5 @@
+install bun globally
+    npm install -g bun
+
+run a file
+    bun index.ts

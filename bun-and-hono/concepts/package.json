@@ -1,0 +1,13 @@
+{
+  "name": "concepts",
+  "module": "index.ts",
+  "type": "module",
+  "private": true,
+  "devDependencies": {
+    "@types/bun": "latest",
+    "bun-types": "^1.2.10"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  }
+}
