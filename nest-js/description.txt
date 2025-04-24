@@ -2,7 +2,7 @@
 -------------------------getting started -------------------------------------
 
 1.  npm i -g @nestjs/cli
-2.  nest new concepts
+2.  nest new <concepts>
 
 
 genarate blog module
@@ -54,12 +54,34 @@ travel-tracker> nest generate module destinations
 travel-tracker> nest generate controller destinations
 travel-tracker> nest generate service destinations
 travel-tracker> npm install @nestjs/mapped-types  
-travel-tracker> 
-travel-tracker> 
-travel-tracker> 
-travel-tracker> 
-travel-tracker> 
-travel-tracker> 
-travel-tracker> 
-travel-tracker> 
-travel-tracker> 
+
+
+-------------- file upload ---------------------------
+nest new file-upload
+
+file-upload> npm i prisma @prisma/client
+
+file-upload> npx prisma init
+
+crete schemas in schema.prisma
+
+file-upload> npx prisma generate
+
+file-upload> npx prisma migrate dev --name init
+
+file-upload> npm i --save @nestjs/config
+
+file-upload> npm i cloudinary multer @nestjs/config
+
+
+file-upload> nest generate module file-upload
+file-upload> nest generate controller file-upload
+file-upload> nest generate service file-upload
+
+file-upload> nest generate module file-upload
+file-upload> nest generate module file-upload
+
+file-upload> npm install @types/multer
+file-upload> npm install --save @types/multer
+
+file-upload> npm install @nestjs/platform-express
