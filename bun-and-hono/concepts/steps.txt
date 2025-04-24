@@ -3,3 +3,6 @@ install bun globally
 
 run a file
     bun index.ts
+
+watch the chages and restar
+    bun-and-hono\concepts> bun --watch index.ts
