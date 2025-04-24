@@ -11,4 +11,6 @@
 
 // import "./features/server";
 
-import "./features/hashing";
+// import "./features/hashing";
+
+import "./features/sqlite";

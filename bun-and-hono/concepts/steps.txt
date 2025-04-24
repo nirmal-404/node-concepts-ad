@@ -4,5 +4,7 @@ install bun globally
 run a file
     bun index.ts
 
-watch the chages and restar
+watch the chages and restart
     bun-and-hono\concepts> bun --watch index.ts
+
+used native sqlite -> DB Browser SQLite
