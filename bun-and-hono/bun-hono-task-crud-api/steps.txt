@@ -1,0 +1,14 @@
+create database
+
+npm create hono@latest bun-hono-task-crud-api
+cd .\bun-hono-task-crud-api\
+
+bun-hono-task-crud-api> npm run dev 
+
+bun-hono-task-crud-api> npm i @hono/zod-validator
+
+bun-hono-task-crud-api>
+
+bun-hono-task-crud-api>
+
+bun-hono-task-crud-api>
